@@ -2,7 +2,7 @@
     <div class="container wow-outer">
         <div class="wow fadeIn">
             <div class="row row-50 row-lg-60">
-                <div class="col-12"><a href="index.html"><img src="{{asset('storage/images/logo-inverse-415x103.png')}}" alt="" width="207" height="51"/></a></div>
+                <div class="col-12"><a href="index.html"><img src="{{asset('storage/images/logo-1.png')}}" alt="" width="80" height="80"/></a></div>
                 <div class="col-12">
                     <ul class="footer-minimal-nav">
                         <li><a href="about-us.html">About Us</a></li>
@@ -22,7 +22,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Helper</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com/">Templatemonster</a></p>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Shopner Khuje Foundation</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>Design&nbsp;by&nbsp;<a href="https://www.akaiyum.com/" target="_blank">A. Kaiyum</a></p>
         </div>
     </div>
 </footer>
