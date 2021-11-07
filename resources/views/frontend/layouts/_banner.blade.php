@@ -1,4 +1,4 @@
-<div class="main-bunner-img" style="background-image:url({{asset('storage/images/bg-banner2.jpeg')}}); background-size: cover;"></div>
+<div class="main-bunner-img" style="background-image:url({{asset('storage/images/home-1.jpg')}}); background-size: cover;"></div>
 <div class="main-bunner-inner">
     <div class="container">
         <div class="row row-50 justify-content-lg-center align-items-lg-center">

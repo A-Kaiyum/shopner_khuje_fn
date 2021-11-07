@@ -17,9 +17,12 @@
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Typography</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Blog</a>
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                            </li>
+                            </li>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Emergency Help</a>
                             </li>
                         </ul><a class="button button-primary button-sm" href="#">Donate</a>
                     </div>

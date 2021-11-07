@@ -13,7 +13,18 @@
         <p>Loading...</p>
     </div>
 </div>
-@yield('home_content')
+<div class="page">
+    <!-- Page Header-->
+    <header class="section page-header">
+        <!-- RD Navbar-->
+        @include('frontend.layouts._header')
+    </header>
+    <!-- Swiper-->
+    @yield('home_content')
+    <!-- Page Footer-->
+    @include('frontend.layouts._footer')
+</div>
+
 <div class="snackbars" id="form-output-global"></div>
 @include('frontend.layouts._scripts')
 <!-- coded by ragnar-->
