@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-
+//fronted routes
 
 Route::get('/', function () {
     return view('frontend.pages.index');
@@ -13,9 +13,18 @@ Route::get('/blog', function () {
 Route::get('/category', function () {
     return view('frontend.pages.category');
 });
-Route::get('/admin', function () {
-    return view('backend.pages.dashboard');
+
+//admin panel route
+
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('/dashboard', function () {
+        return view('backend.pages.dashboard');
+    });
+    Route::resource('category','CategoryController');
 });
+
+
+
 
 
 Auth::routes();

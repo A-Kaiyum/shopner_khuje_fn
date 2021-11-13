@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
    @include('backend.layouts._head')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -16,9 +17,8 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
         @include('backend.layouts._sidebar')
-    </aside>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

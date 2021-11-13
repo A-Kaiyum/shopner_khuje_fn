@@ -1,3 +1,4 @@
+<header class="section page-header">
 <div class="rd-navbar-wrap">
     <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
         <div class="rd-navbar-main-outer">
@@ -17,7 +18,7 @@
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Blog</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="#">Blog</a>
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
                             </li>
@@ -31,3 +32,4 @@
         </div>
     </nav>
 </div>
+</header>

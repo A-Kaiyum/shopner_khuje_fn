@@ -15,10 +15,10 @@
 </div>
 <div class="page">
     <!-- Page Header-->
-    <header class="section page-header">
+
         <!-- RD Navbar-->
         @include('frontend.layouts._header')
-    </header>
+
     <!-- Swiper-->
     @yield('home_content')
     <!-- Page Footer-->

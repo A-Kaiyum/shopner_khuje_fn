@@ -2,6 +2,12 @@
 <!-- jQuery UI 1.11.4 -->
 <script src="{{asset('assets/backend/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script>
+    @if(\Illuminate\Support\Facades\Session::has('success'))
+        toastr.success("{{Session::get('success')}}");
+      @endif
+</script>
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>

@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Session;
 use App\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -14,7 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::orderBy('created_at','DESC')->paginate(20);
+        return view('backend.pages.category',compact('categories'));
     }
 
     /**
@@ -24,7 +26,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages.createCategory');
     }
 
     /**
@@ -35,7 +37,18 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       //validate
+        $this->validate($request,[
+            'name' =>'required|unique:categories,name'
+        ]);
+        $category = Category::create([
+            'name'=>$request->name,
+            'slug'=>Str::slug($request->name,'-'),
+            'description'=>$request->description,
+        ]);
+        Session::flash('success', 'Category Created Successfully!');
+        return redirect()->back();
+
     }
 
     /**
@@ -57,7 +70,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+
+       return view('backend.pages.editCategory',compact('category'));
     }
 
     /**
@@ -69,7 +83,28 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+
+        if(Category::where('name',$request->name)->exists()){
+
+            $category->description=$request->description;
+            $category->save();
+            Session::flash('success', 'Description updated Successfully!');
+            return redirect()->route('category.index');
+        }
+        else{
+            //validate
+            $this->validate($request,[
+                'name' =>"required|unique:categories,name,$category->name",
+            ]);
+            $category->name= $request->name;
+            $category->slug=Str::slug($request->name,'-');
+            $category->description=$request->description;
+            $category->save();
+
+            Session::flash('success', 'Category updated Successfully!');
+            return redirect()->route('category.index');
+        }
+
     }
 
     /**
@@ -80,6 +115,10 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        if ($category){
+            $category->delete();
+            Session::flash('success', 'Category deleted Successfully!');
+            return redirect()->route('category.index');
+        }
     }
 }
