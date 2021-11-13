@@ -64,8 +64,19 @@
                             <p>Category</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{route('tag.index')}}" class="nav-link">
+
+                            <i class="fas fa-tag"></i>
+                            <p>
+                                Tag
+                            </p>
+                        </a>
+
+                    </li>
                 </ul>
             </li>
+
             <li class="nav-item menu-open">
                 <a href="#" class="nav-link bg-danger">
 

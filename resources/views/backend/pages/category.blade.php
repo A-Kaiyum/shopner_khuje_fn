@@ -26,6 +26,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @if($categories->count()>0)
                                 <?php $sl = 1; ?>
                                 @foreach($categories as $category)
                                     <tr>
@@ -45,7 +46,13 @@
                                     </tr>
                                     <?php $sl++; ?>
                                 @endforeach
-
+                                @else
+                                <tr>
+                                    <td colspan="5">
+                                        <h5 class="text-center">No Category Found</h5>
+                                    </td>
+                                </tr>
+                                    @endif
                                 </tbody>
                             </table>
                         </div>

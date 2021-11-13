@@ -21,6 +21,7 @@ Route::group(['prefix'=>'admin'],function(){
         return view('backend.pages.dashboard');
     });
     Route::resource('category','CategoryController');
+    Route::resource('tag','TagController');
 });
 
 
