@@ -17,7 +17,8 @@
                 </div>
 
                 <div class="col-lg-12 col-md-6">
-                    <form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('post.update',$post->id)}}" method="POST" enctype="multipart/form-data">
+                        @method('PUT')
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
@@ -58,7 +59,7 @@
                             <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea name="description" id="postDescription" rows="4" class="form-control" placeholder="Enter Description">
-                                    {{old('description')}}
+                                    {{$post->description}}
                                     </textarea>
                             </div>
                         </div>
