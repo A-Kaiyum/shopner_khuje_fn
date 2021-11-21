@@ -53,7 +53,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="{{route('post.index')}}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Post</p>
                         </a>
@@ -66,27 +66,24 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{route('tag.index')}}" class="nav-link">
-
-                            <i class="fas fa-tag"></i>
-                            <p>
-                                Tag
-                            </p>
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Tag</p>
                         </a>
-
                     </li>
+
                 </ul>
             </li>
+            <li class="nav-item">
+                <div>
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                        <button type="submit" class="nav-link bg-danger"><i class="fas fa-sign-out-alt"></i>Log Out</button>
+                    </form>
 
-            <li class="nav-item menu-open">
-                <a href="#" class="nav-link bg-danger">
-
-                    <i class="fas fa-sign-out-alt"></i>
-                    <p>
-                        Log Out
-                    </p>
-                </a>
-
+                </div>
             </li>
+
+
         </ul>
     </nav>
     <!-- /.sidebar-menu -->

@@ -16,15 +16,14 @@ Route::get('/category', function () {
 
 //admin panel route
 
-Route::group(['prefix'=>'admin'],function(){
+Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::get('/dashboard', function () {
         return view('backend.pages.dashboard');
     });
     Route::resource('category','CategoryController');
     Route::resource('tag','TagController');
+    Route::resource('post','PostController');
 });
-
-
 
 
 
