@@ -82,7 +82,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return view('backend.pages.showPost',compact('post'));
     }
 
     /**
@@ -114,9 +114,8 @@ class PostController extends Controller
 
         $post ->title = $request->title;
         $post ->slug =Str::slug($request->title);
-         $post-> image = 'image.jpg';
-           $post-> description = $request->description;
-           $post-> category_id = $request->category_id;
+        $post-> description = $request->description;
+        $post-> category_id = $request->category_id;
 
 
         if($request->hasFile('image')) {

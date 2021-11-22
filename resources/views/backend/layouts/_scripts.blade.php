@@ -10,6 +10,9 @@
       $(document).ready(function () {
           bsCustomFileInput.init()
       })
+    $(document).ready(function() {
+        $('#summernote').summernote();
+    });
 </script>
 <script>
     $.widget.bridge('uibutton', $.ui.button)
@@ -32,6 +35,7 @@
 <script src="{{asset('assets/backend/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js')}}"></script>
 <!-- Summernote -->
 <script src="{{asset('assets/backend/plugins/summernote/summernote-bs4.min.js')}}"></script>
+
 <!-- custum input file-->
 <script src="{{asset('assets/backend/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
 <!-- overlayScrollbars -->

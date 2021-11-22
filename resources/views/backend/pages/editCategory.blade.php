@@ -27,7 +27,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea name="description" id="categoryDescription" value="" rows="4" class="form-control"  placeholder="Enter Description">
+                                <textarea name="description" id="summernote" value="" rows="4" class="form-control"  placeholder="Enter Description">
                                         {{$category->description}}
                                     </textarea>
                             </div>

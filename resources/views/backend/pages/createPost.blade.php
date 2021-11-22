@@ -47,7 +47,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <textarea name="description" id="postDescription" rows="4" class="form-control" placeholder="Enter Description">
+                                <textarea name="description" id="summernote" rows="4" class="form-control" placeholder="Enter Description">
                                     {{old('description')}}
                                     </textarea>
                             </div>

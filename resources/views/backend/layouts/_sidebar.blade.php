@@ -54,19 +54,19 @@
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <a href="{{route('post.index')}}" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="fas fa-pen-square nav-icon"></i>
                             <p>Post</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('category.index')}}" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="fas fa-indent nav-icon"></i>
                             <p>Category</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('tag.index')}}" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
+                            <i class="fas fa-arrows-alt nav-icon"></i>
                             <p>Tag</p>
                         </a>
                     </li>
