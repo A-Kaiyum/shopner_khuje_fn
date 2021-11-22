@@ -27,6 +27,7 @@
 
 <div class="snackbars" id="form-output-global"></div>
 @include('frontend.layouts._scripts')
+
 <!-- coded by ragnar-->
 </body>
 </html>

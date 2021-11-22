@@ -14,16 +14,16 @@
                     <div class="rd-navbar-nav-wrap">
                         <!-- RD Navbar Nav-->
                         <ul class="rd-navbar-nav">
-                            <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                            <li class="rd-nav-item active"><a class="rd-nav-link" href="{{route('frontSide')}}">Home</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="about-us.html">About Us</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('frontSide.about')}}">About Us</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="#">Blog</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('frontSide.blog')}}">Blog</a>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('frontSide.contact')}}">Contacts</a>
                             </li>
                             </li>
-                            <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Emergency Help</a>
+                            <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('frontSide.help')}}">Emergency Help</a>
                             </li>
                         </ul><a class="button button-primary button-sm" href="#">Donate</a>
                     </div>
