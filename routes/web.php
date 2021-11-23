@@ -32,6 +32,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::resource('category','Backend\CategoryController');
     Route::resource('tag','Backend\TagController');
     Route::resource('post','Backend\PostController');
+
+    Route::resource('user','Backend\UserController');
 });
 
 

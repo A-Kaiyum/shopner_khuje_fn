@@ -74,6 +74,12 @@
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="{{route('user.index')}}" class="nav-link">
+                    <i class="fas fa-user nav-icon"></i>
+                    <p>User List</p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <div>
                     <form action="{{route('logout')}}" method="post">
                         @csrf

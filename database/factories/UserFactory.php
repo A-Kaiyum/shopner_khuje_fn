@@ -34,8 +34,8 @@ $factory->define(\App\Category::class,function (Faker $faker){
 });
 $factory->define(\App\Tag::class,function (Faker $faker){
     return[
-        'name' => $faker->word(),
-        'slug' => Str::slug($faker->word()),
+        'name' => $faker->unique()->word(),
+        'slug' => Str::slug($faker->unique()->word()),
     ];
 });
 $factory->define(\App\Post::class,function (Faker $faker){

@@ -66,10 +66,8 @@ class PostController extends Controller
             $image_new_name = time().'.'.$image->getClientOriginalExtension();
             $image->move('storage/images',$image_new_name);
             $post->image = '/storage/images/'.$image_new_name;
-
-
-
         }
+
         $post->save();
         Session::flash('success','Post Created Successfully');
         return redirect()->back();
