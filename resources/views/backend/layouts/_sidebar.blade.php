@@ -80,6 +80,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-user nav-icon"></i>
+                    <p>My Profile</p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <div>
                     <form action="{{route('logout')}}" method="post">
                         @csrf

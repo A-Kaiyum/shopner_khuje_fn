@@ -48,13 +48,20 @@ class UserController extends Controller
         $this->validate($request,[
             'name'=>'required|string|max:255',
             'email'=>"required|email|unique:users,email,$user->id",
-            'password'=>'sometimes|min:8',
+            'password'=>'sometimes|nullable|min:8',
         ]);
 
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = bcrypt($request->passowrd);
         $user->description = $request->description;
+
+        if($request->hasFile('image')) {
+            $image = $request->image;
+            $image_new_name = time() . '.' . $image->getClientOriginalExtension();
+            $image->move('storage/images', $image_new_name);
+            $user->image = '/storage/images/' . $image_new_name;
+        }
 
         $user->save();
 
