@@ -10,9 +10,9 @@
                         <span class="post-category text-white bg-success mb-3">{{$post->category->name}}</span>
                         <h1 class="mb-4"><a href="#">{{$post->title}}</a></h1>
                         <div class="post-meta align-items-center text-center">
-                            <figure class="author-figure mb-0 mr-3 d-inline-block"><img src="{{asset('storage/images/img_1.jpg')}}" alt="Image" class="img-fluid"></figure>
+                            <figure class="author-figure mb-0 mr-3 d-inline-block"><img src="{{asset($post->user->image)}}" alt="Image" class="img-fluid"></figure>
                             <span class="d-inline-block mt-1">{{$post->user->name}}</span>
-                            <span>&nbsp;-&nbsp; {{$post->created_at->format('M d, Y')}}</span>
+                            <span>&nbsp;&nbsp;-&nbsp; {{$post->created_at->format('M d, Y')}}</span>
                         </div>
                     </div>
                 </div>
@@ -161,61 +161,24 @@
                             </div>
                         </form>
                     </div>
-                    <!-- END sidebar-box -->
-                    <div class="sidebar-box">
-                        <div class="bio text-center">
-                            <img src="images/person_2.jpg" alt="Image Placeholder" class="img-fluid mb-5">
-                            <div class="bio-body">
-                                <h2>Craig David</h2>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facilis sunt repellendus excepturi beatae porro debitis voluptate nulla quo veniam fuga sit molestias minus.</p>
-                                <p><a href="#" class="btn btn-primary btn-sm rounded px-4 py-2">Read my bio</a></p>
-                                <p class="social">
-                                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
-                                    <a href="#" class="p-2"><span class="fa fa-youtube-play"></span></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END sidebar-box -->
+
                     <div class="sidebar-box">
                         <h3 class="heading">Popular Posts</h3>
                         <div class="post-entry-sidebar">
                             <ul>
+                                @foreach($popularPosts as $post)
                                 <li>
-                                    <a href="">
-                                        <img src="images/img_1.jpg" alt="Image placeholder" class="mr-4">
+                                    <a href="{{route('frontSide.post',['slug'=>$post->slug])}}">
+                                        <img src="{{asset($post->image)}}" alt="Image placeholder" class="mr-4">
                                         <div class="text">
-                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
+                                            <h4>{{$post->title}}</h4>
                                             <div class="post-meta">
-                                                <span class="mr-2">March 15, 2018 </span>
+                                                <span class="mr-2">{{$post->created_at->format('M d, Y')}} </span>
                                             </div>
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="">
-                                        <img src="images/img_2.jpg" alt="Image placeholder" class="mr-4">
-                                        <div class="text">
-                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
-                                            <div class="post-meta">
-                                                <span class="mr-2">March 15, 2018 </span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="images/img_3.jpg" alt="Image placeholder" class="mr-4">
-                                        <div class="text">
-                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
-                                            <div class="post-meta">
-                                                <span class="mr-2">March 15, 2018 </span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -224,11 +187,9 @@
                     <div class="sidebar-box">
                         <h3 class="heading">Categories</h3>
                         <ul class="categories">
-                            <li><a href="#">Food <span>(12)</span></a></li>
-                            <li><a href="#">Travel <span>(22)</span></a></li>
-                            <li><a href="#">Lifestyle <span>(37)</span></a></li>
-                            <li><a href="#">Business <span>(42)</span></a></li>
-                            <li><a href="#">Adventure <span>(14)</span></a></li>
+                            @foreach($categories as $category)
+                            <li><a href="{{route('categoryPage',['slug'=>$category->slug])}}">{{$category->name}} <span>(12)</span></a></li>
+                            @endforeach
                         </ul>
                     </div>
                     <!-- END sidebar-box -->

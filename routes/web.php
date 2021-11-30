@@ -22,8 +22,11 @@ Route::get('/blog','Frontend\FrontController@blog')->name('frontSide.blog');
 Route::get('/post/{slug}','Frontend\FrontController@singlePost')->name('frontSide.post');
 Route::get('/contact','Frontend\FrontController@contact')->name('frontSide.contact');
 Route::get('/help','Frontend\FrontController@help')->name('frontSide.help');
+Route::get('/category/{slug}','Frontend\FrontController@category')->name('categoryPage');
+
 
 //admin panel route
+Auth::routes();
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::get('/dashboard', function () {
@@ -34,9 +37,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::resource('post','Backend\PostController');
 
     Route::resource('user','Backend\UserController');
+
 });
 
 
-
-Auth::routes();
 
