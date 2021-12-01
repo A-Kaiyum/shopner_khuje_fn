@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -37,8 +38,14 @@ public function home(){
     $post = Post::with('category','user')->where('slug',$slug)->first();
     $popularPosts = Post::with('category','user')->inRandomOrder()->limit(3)->get();
     $categories = Category::all();
+    $tags = Tag::inRandomOrder()->limit(4)->get();
+    //related post
+        $relatedPosts = Post::orderBy('category_id','DESC')->inRandomOrder()->limit(4)->get();
+        $firstRelatedPost = $relatedPosts->splice(0,1);
+        $middleRelatedPost = $relatedPosts->splice(0,2);
+        $lastRelatedPost = $relatedPosts->splice(0);
         if($post){
-            return view('frontend.pages.singlePost',compact(['post','categories','popularPosts']));
+            return view('frontend.pages.singlePost',compact(['post','categories','popularPosts','relatedPosts','firstRelatedPost','middleRelatedPost','lastRelatedPost','tags']));
         }
         else
         {

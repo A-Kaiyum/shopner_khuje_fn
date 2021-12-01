@@ -31,8 +31,8 @@
                                 <span>&nbsp;-&nbsp; {{$post->created_at->format('M d, Y')}}</span>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
-                            <p><a href="#">Read More</a></p>
+                            <p>{!! \Illuminate\Support\Str::limit($post->description,200) !!}</p>
+                            <p><a href="{{route('frontSide.post',['slug'=>$post->slug])}}">Read More</a></p>
                         </div>
                     </div>
                     @endforeach

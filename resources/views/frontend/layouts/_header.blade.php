@@ -8,7 +8,7 @@
                     <!-- RD Navbar Toggle-->
                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                     <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand"><a href="{{route('frontSide')}}"><img class="brand-logo-light" src="{{asset('storage/images/logo-1.png')}}" alt="" width="50" height="50"/></a></div>
+                    <div class="rd-navbar-brand"><a href="{{route('frontSide')}}"><img class="brand-logo-light" src="{{asset('storage/images/logo-1.png')}}" alt="" width="50" height="50" style="margin-left: 200px"/></a></div>
                 </div>
                 <div class="rd-navbar-main-element">
                     <div class="rd-navbar-nav-wrap">
@@ -25,6 +25,7 @@
                             </li>
                             <li class="rd-nav-item"><a class="rd-nav-link" href="{{route('frontSide.help')}}">Emergency Help</a>
                             </li>
+
                         </ul><a class="button button-primary button-sm" href="#">Donate</a>
                     </div>
                 </div><a class="button button-primary button-sm" href="#">Donate</a>
