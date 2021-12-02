@@ -22,7 +22,7 @@
                     </ul>
                 </div>
             </div>
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Shopner Khuje Foundation</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span>Design&nbsp;by&nbsp;<a href="https://www.akaiyum.com/" target="_blank">A. Kaiyum</a></p>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Shopner Khuje Foundation</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
         </div>
     </div>
 </footer>
