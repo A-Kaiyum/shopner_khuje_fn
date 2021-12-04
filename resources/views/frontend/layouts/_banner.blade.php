@@ -4,8 +4,8 @@
         <div class="row row-50 justify-content-lg-center align-items-lg-center">
             <div class="col-lg-12">
                 <div class="bunner-content-modern text-center">
-                    <h2 class="main-bunner-title">Shopner Khuje Foundation</h2>
-                    <p>We do whatever it takes to make sure children don’t just survive but thrive. Helper believes that every child should be able to make their mark on their world and help build a better future.</p>
+                    <h2 class="main-bunner-title">Shopner Khoje</h2>
+                    <p>Human for Humanity .</p>
                 </div>
             </div>
         </div>
