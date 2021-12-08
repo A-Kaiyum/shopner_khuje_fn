@@ -6,15 +6,6 @@ use Illuminate\Support\Facades\Route;
 
 //fronted routes
 
-/*Route::get('/', function () {
-    return view('frontend.pages.index');
-});
-Route::get('/blog', function () {
-    return view('frontend.pages.blog');
-});
-Route::get('/category', function () {
-    return view('frontend.pages.category');
-});*/
 
 Route::get('/','Frontend\FrontController@home')->name('frontSide');
 Route::get('/about','Frontend\FrontController@about')->name('frontSide.about');
@@ -40,13 +31,14 @@ Route::post('/donateBlood','Frontend\FrontController@sendToDonate')->name('front
 Auth::routes();
 
 Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
-    Route::get('/dashboard', function () {
-        return view('backend.pages.dashboard');
-    });
+
+    Route::get('/dashboard','Backend\DashboardController@index')->name('dashboard');
     Route::resource('category','Backend\CategoryController');
     Route::resource('tag','Backend\TagController');
     Route::resource('post','Backend\PostController');
     Route::resource('user','Backend\UserController');
+    Route::resource('message','Backend\ContactController');
+
 
 
 });

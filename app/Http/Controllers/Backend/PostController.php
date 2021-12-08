@@ -135,7 +135,7 @@ class PostController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+  /*  public function destroy(Post $post)
     {
         if($post){
             if(file_exists(public_path($post->image))){
@@ -145,5 +145,5 @@ class PostController extends Controller
             Session::flash('success','Post Deleted Successfully');
             return redirect()->back();
         }
-    }
+    }*/
 }

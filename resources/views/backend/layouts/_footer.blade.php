@@ -2,5 +2,5 @@
 All rights reserved.
 <div class="float-right d-none d-sm-inline-block">
     <b>Design and Developed by</b>
-    <a href="https://akaiyum.com/" target="_blank">A. Kaiyum</a>
+    <a href="#" target="_blank">Shopner Khoje</a>
 </div>
