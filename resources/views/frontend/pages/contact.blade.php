@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','contact')
+@section('title','Contact')
 @section('home_content')
 <section class="parallax-container" data-parallax-img="{{asset('storage/images/contact-us.jpg')}}">
     <div class="parallax-content breadcrumbs-custom context-dark">
@@ -48,38 +48,41 @@
         </div>
     </div>
 </section>
-<!-- Contact us-->
-<section class="section section-lg bg-gray-1 text-center">
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-9 col-lg-7">
-                <h3>Contact with us</h3>
-                <!-- RD Mailform-->
-                <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                    <div class="form-wrap">
-                        <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
-                        <label class="form-label" for="contact-name">Your Name</label>
-                    </div>
-                    <div class="form-wrap">
-                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                        <label class="form-label" for="contact-email">E-mail</label>
-                    </div>
-                    <div class="form-wrap">
-                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric">
-                        <label class="form-label" for="contact-phone">Phone</label>
-                    </div>
-                    <div class="form-wrap">
-                        <label class="form-label" for="contact-message"> Message</label>
-                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-sm-7 col-lg-5">
-                            <button class="button button-block button-lg button-primary" type="submit">Send</button>
+
+    <section class="section section-lg bg-gray-1 text-center">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-9 col-lg-7">
+                    <h3>Contact With Us</h3>
+                    <!-- RD Mailform-->
+                    <form class="rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="{{route('frontSide.contact')}}" novalidate="novalidate">
+                    @include('frontend.layouts.formSession')
+                        @csrf
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="contact-name" type="text" name="name" data-constraints="@Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-name">Your Name</label>
                         </div>
-                    </div>
-                </form>
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-email">E-mail</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="contact-phone" type="text" name="phone" data-constraints="@Numeric"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-phone">Phone</label>
+                        </div>
+                        <div class="form-wrap">
+                            <label class="form-label rd-input-label" for="contact-message"> Message</label>
+                            <textarea class="form-input form-control-has-validation form-control-last-child" id="contact-message" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-7 col-lg-5">
+                                <button class="button button-block button-lg button-primary" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
 @endsection

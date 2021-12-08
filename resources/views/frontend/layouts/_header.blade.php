@@ -40,11 +40,11 @@
                                                                                                      href="#">Emergency
                                         Help</a>
                                     <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Police</a>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('frontSide.police')}}">Police</a>
                                         </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Doctor</a>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('frontSide.doctor')}}">Doctor</a>
                                         </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Ambulance</a>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('frontSide.ambulance')}}">Ambulance</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -54,9 +54,9 @@
                                         Bank</a>
 
                                     <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Find Blood</a>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('frontSide.findBlood')}}">Find Blood</a>
                                         </li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Become Blood
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="{{route('frontSide.donateBlood')}}">Become Blood
                                                 Donner</a></li>
                                     </ul>
 

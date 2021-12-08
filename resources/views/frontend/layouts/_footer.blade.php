@@ -5,11 +5,9 @@
                 <div class="col-12"><a href="index.html"><img src="{{asset('storage/images/logo-1.png')}}" alt="" width="80" height="80"/></a></div>
                 <div class="col-12">
                     <ul class="footer-minimal-nav">
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="#">Causes</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="{{route('frontSide.about')}}">About Us</a></li>
+                        <li><a href="{{route('frontSide.contact')}}">Contact Us</a></li>
+                        <li><a href="{{route('frontSide.blog')}}">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-12">

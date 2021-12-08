@@ -3,10 +3,16 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Category;
+use App\Contact;
+use App\Doctor;
+use App\DonateBlood;
+use App\FindBlood;
 use App\Http\Controllers\Controller;
+use App\Police;
 use App\Post;
 use App\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class FrontController extends Controller
 {
@@ -66,8 +72,98 @@ public function home(){
 
         return view('frontend.pages.contact');
     }
-    public function help(){
+    public function sendMessage(Request $request){
+    $this->validate($request,[
+        'name'=>'required|string|max:255',
+        'email'=>'required|email',
+        'phone'=>'required|max:11',
+        'message'=>'required',
+        ]);
 
-        return view('frontend.pages.help');
+    Contact::create(
+        $request->all()
+    );
+    Session::flash('message','Message Sent Successfully!');
+    return redirect()->back();
+
     }
+
+    public function police(){
+
+        return view('frontend.pages.police');
+    }
+    public function sendToPolice(Request $request){
+        $this->validate($request,[
+            'name'=>'required|string|max:255',
+            'email'=>'required|email',
+            'phone'=>'required|max:11',
+            'message'=>'required',
+        ]);
+
+        Police::create(
+            $request->all()
+        );
+        Session::flash('message','Message Sent Successfully!');
+        return redirect()->back();
+    }
+
+    public function doctor(){
+        return view('frontend.pages.doctor');
+    }
+
+    public function sendToDoctor(Request $request){
+        $this->validate($request,[
+            'name'=>'required|string|max:255',
+            'email'=>'required|email',
+            'phone'=>'required|max:11',
+            'message'=>'required',
+        ]);
+
+        Doctor::create(
+            $request->all()
+        );
+        Session::flash('message','Message Sent Successfully!');
+        return redirect()->back();
+    }
+
+    public function findBlood(){
+        return view('frontend.pages.findBlood');
+    }
+
+    public function ambulance(){
+        return view('frontend.pages.ambulance');
+    }
+
+    public function sendForBlood(Request $request){
+        $this->validate($request,[
+            'name'=>'required|string|max:255',
+            'email'=>'required|email',
+            'phone'=>'required|max:11',
+            'message'=>'required',
+        ]);
+
+        FindBlood::create(
+            $request->all()
+        );
+        Session::flash('message','Message Sent Successfully!');
+        return redirect()->back();
+    }
+    public function donateBlood(){
+        return view('frontend.pages.donateBlood');
+    }
+    public function sendToDonate(Request $request){
+        $this->validate($request,[
+            'name'=>'required|string|max:255',
+            'email'=>'required|email',
+            'phone'=>'required|max:11',
+            'message'=>'required',
+        ]);
+
+        DonateBlood::create(
+            $request->all()
+        );
+        Session::flash('message','Message Sent Successfully!');
+        return redirect()->back();
+    }
+
 }
