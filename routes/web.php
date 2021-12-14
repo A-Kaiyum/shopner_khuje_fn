@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-
 //fronted routes
 
 
@@ -42,6 +41,4 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
 
 
 });
-
-
 

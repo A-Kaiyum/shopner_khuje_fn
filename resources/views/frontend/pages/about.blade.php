@@ -108,14 +108,14 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Jane Smith</a></h4>
+                            <h4><a class="team-name" href="#">Ahamed Shakil</a></h4>
                             <p>Executive director</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/shohag.jpg" alt="" width="390" height="252"/>
+                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/shohag.png" alt="" width="390" height="252"/>
                             <ul class="team-classic-soc-list">
                                 <li><a class="icon icon-md fa-facebook" href="#"></a></li>
                                 <li><a class="icon icon-md fa-instagram" href="#"></a></li>
@@ -123,14 +123,14 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Albert Martinez</a></h4>
+                            <h4><a class="team-name" href="#">MD Shohag Ahmed</a></h4>
                             <p>Adoption program Director</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-3-390x252.jpg" alt="" width="390" height="252"/>
+                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/shotez.png" alt="" width="390" height="252"/>
                             <ul class="team-classic-soc-list">
                                 <li><a class="icon icon-md fa-facebook" href="#"></a></li>
                                 <li><a class="icon icon-md fa-instagram" href="#"></a></li>
@@ -138,14 +138,14 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Ann Allen</a></h4>
+                            <h4><a class="team-name" href="#">Mirja Galib Shotez</a></h4>
                             <p>Educational program Director</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-4-390x252.jpg" alt="" width="390" height="252"/>
+                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/shotezbro.png" alt="" width="390" height="252"/>
                             <ul class="team-classic-soc-list">
                                 <li><a class="icon icon-md fa-facebook" href="#"></a></li>
                                 <li><a class="icon icon-md fa-instagram" href="#"></a></li>
@@ -153,14 +153,14 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Evelyn Perez</a></h4>
+                            <h4><a class="team-name" href="#">Pervej Ahmed</a></h4>
                             <p>IT Director</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-5-390x252.jpg" alt="" width="390" height="252"/>
+                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/masrafee.png" alt="" width="390" height="252"/>
                             <ul class="team-classic-soc-list">
                                 <li><a class="icon icon-md fa-facebook" href="#"></a></li>
                                 <li><a class="icon icon-md fa-instagram" href="#"></a></li>
@@ -168,14 +168,14 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Daniel Bryant</a></h4>
+                            <h4><a class="team-name" href="#">MP. Mashrafe Mortaza</a></h4>
                             <p>Community support Manager</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="team-classic">
-                        <div class="team-classic-figure"><img src="images/team-classic-6-390x252.jpg" alt="" width="390" height="252"/>
+                        <div class="team-classic-figure"><img src="{{asset('storage')}}/images/uthso.png" alt="" width="390" height="252"/>
                             <ul class="team-classic-soc-list">
                                 <li><a class="icon icon-md fa-facebook" href="#"></a></li>
                                 <li><a class="icon icon-md fa-instagram" href="#"></a></li>
@@ -183,7 +183,7 @@
                             </ul>
                         </div>
                         <div class="team-classic-caption">
-                            <h4><a class="team-name" href="#">Louis Powell</a></h4>
+                            <h4><a class="team-name" href="#">Tanzim Ahmed Utsho</a></h4>
                             <p>Assistant property Manager</p>
                         </div>
                     </div>
