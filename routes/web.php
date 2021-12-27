@@ -36,7 +36,12 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::resource('tag','Backend\TagController');
     Route::resource('post','Backend\PostController');
     Route::resource('user','Backend\UserController');
-    Route::resource('message','Backend\ContactController');
+    Route::resource('contact','Backend\ContactController');
+    Route::resource('police','Backend\PoliceController');
+    Route::resource('doctor','Backend\DoctorController');
+    Route::resource('findBlood','Backend\FindBloodController');
+    Route::resource('findDoner','Backend\FindDonerController');
+
 
 
 

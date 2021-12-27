@@ -10,18 +10,18 @@ use Illuminate\Support\Facades\Session;
 class ContactController extends Controller
 {
     public function index(){
-        $messages=Contact::orderBy('id','DESC')->get();
-        return view('backend.pages.message',compact('messages'));
+        $contacts=Contact::orderBy('id','DESC')->get();
+        return view('backend.pages.contact',compact('contacts'));
     }
-    public function show(Contact $message){
-       //$message = Contact::where('id',$message_id)->get();
-        return view('backend.pages.showMessage',compact('message'));
+    public function show(Contact $contact){
+       //$contact = Contact::where('id',$contact_id)->get();
+        return view('backend.pages.showContact',compact('contact'));
     }
-    public function destroy(Contact $message){
-        if($message){
+    public function destroy(Contact $contact){
+        if($contact){
 
-            $message->delete();
-            Session::flash('success','Post Deleted Successfully');
+            $contact->delete();
+            Session::flash('success','Message Deleted Successfully');
             return redirect()->back();
         }
     }

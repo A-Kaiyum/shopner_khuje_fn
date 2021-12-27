@@ -16,9 +16,9 @@ class CreateDonateBloodsTable extends Migration
         Schema::create('donate_bloods', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('bloodgroup');
             $table->string('email');
             $table->string('phone');
+            $table->string('bloodgroup');
             $table->text('message');
             $table->timestamps();
         });

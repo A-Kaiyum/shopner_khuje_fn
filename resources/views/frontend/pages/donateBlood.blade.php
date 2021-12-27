@@ -75,6 +75,11 @@
                             <label class="form-label rd-input-label" for="contact-phone">Phone</label>
                         </div>
                         <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="blood-group" type="text" name="bloodgroup" data-constraints="@Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-name">Your Blood Group</label>
+                        </div>
+
+                        <div class="form-wrap">
                             <label class="form-label rd-input-label" for="contact-message"> Message</label>
                             <textarea class="form-input form-control-has-validation form-control-last-child" id="contact-message" name="message" data-constraints="@Required"></textarea><span class="form-validation"></span>
                         </div>

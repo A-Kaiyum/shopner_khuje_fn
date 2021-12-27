@@ -80,10 +80,70 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{route('message.index')}}" class="nav-link">
+                <a href="#" class="nav-link">
                     <i class="fas fa-envelope nav-icon"></i>
-                    <p>Messages</p>
+                    <p>
+                        Message
+
+                    </p>
                 </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{route('contact.index')}}" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('police.index')}}" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <p>Police</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('doctor.index')}}" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <p>Doctor</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('tag.index')}}" class="nav-link">
+                            <i class="fas fa-arrows-alt nav-icon"></i>
+                            <p>Tag</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <p>
+                        Blood Bank
+
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{route('findBlood.index')}}" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <p>Find Blood</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('findDoner.index')}}" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <p>Blood Doner</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('tag.index')}}" class="nav-link">
+                            <i class="fas fa-arrows-alt nav-icon"></i>
+                            <p>Tag</p>
+                        </a>
+                    </li>
+
+                </ul>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
