@@ -90,26 +90,20 @@
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <a href="{{route('contact.index')}}" class="nav-link">
-                            <i class="fas fa-envelope nav-icon"></i>
+                            <i class="fas fa-address-book nav-icon"></i>
                             <p>Contact</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('police.index')}}" class="nav-link">
-                            <i class="fas fa-envelope nav-icon"></i>
+                            <i class="fas fa-shuttle-van nav-icon"></i>
                             <p>Police</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('doctor.index')}}" class="nav-link">
-                            <i class="fas fa-envelope nav-icon"></i>
+                            <i class="fas fa-user-md nav-icon"></i>
                             <p>Doctor</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{route('tag.index')}}" class="nav-link">
-                            <i class="fas fa-arrows-alt nav-icon"></i>
-                            <p>Tag</p>
                         </a>
                     </li>
 
@@ -117,7 +111,7 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="fas fa-envelope nav-icon"></i>
+                    <i class="fas fa-burn nav-icon"></i>
                     <p>
                         Blood Bank
 
@@ -134,12 +128,6 @@
                         <a href="{{route('findDoner.index')}}" class="nav-link">
                             <i class="fas fa-envelope nav-icon"></i>
                             <p>Blood Doner</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{route('tag.index')}}" class="nav-link">
-                            <i class="fas fa-arrows-alt nav-icon"></i>
-                            <p>Tag</p>
                         </a>
                     </li>
 

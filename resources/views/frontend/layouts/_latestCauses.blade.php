@@ -11,27 +11,27 @@
         <div class="col-md-6 col-lg-4 wow-outer">
             <div class="wow fadeInUp">
                 <article class="box-causes">
-                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-1.jpg')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-1.jpg')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="{{route('frontSide.donation')}}">Donate</a>
                     </div>
-                    <h4 class="font-weight-medium"><a href="#">Children's Education</a></h4>
+                    <h4 class="font-weight-medium"><a href="{{route('frontSide.donation')}}">Children's Education</a></h4>
                 </article>
             </div>
         </div>
         <div class="col-md-6 col-lg-4 wow-outer">
             <div class="wow fadeInUp">
                 <article class="box-causes">
-                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-2.jpg')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-2.jpg')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="{{route('frontSide.donation')}}">Donate</a>
                     </div>
-                    <h4 class="font-weight-medium"><a href="#">Help Bedhe People</a></h4>
+                    <h4 class="font-weight-medium"><a href="{{route('frontSide.donation')}}">Help Bedhe People</a></h4>
                 </article>
             </div>
         </div>
         <div class="col-md-6 col-lg-4 wow-outer">
             <div class="wow fadeInUp">
                 <article class="box-causes">
-                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-3.jpg')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="#">Donate</a>
+                    <div class="box-causes-img"><img src="{{asset('storage/images/cause-3.png')}}" alt="" width="372" height="396"/><a class="button button-sm button-primary" href="{{route('frontSide.donation')}}">Donate</a>
                     </div>
-                    <h4 class="font-weight-medium"><a href="#">Free Madical Camp</a></h4>
+                    <h4 class="font-weight-medium"><a href="{{route('frontSide.donation')}}">Free Madical Camp</a></h4>
                 </article>
             </div>
         </div>

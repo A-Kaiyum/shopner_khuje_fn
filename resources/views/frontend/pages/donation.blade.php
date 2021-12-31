@@ -1,15 +1,15 @@
 @extends('frontend.layouts.master')
-@section('title','Ambulance')
+@section('title','Donation')
 @section('home_content')
     <section class="parallax-container" data-parallax-img="{{asset('storage/images/contact-us.jpg')}}">
         <div class="parallax-content breadcrumbs-custom context-dark">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-9">
-                        <h2 class="breadcrumbs-custom-title">Ambulance</h2>
+                        <h2 class="breadcrumbs-custom-title">Donation</h2>
                         <ul class="breadcrumbs-custom-path">
                             <li><a href="{{route('frontSide')}}">Home</a></li>
-                            <li class="active">Ambulance</li>
+                            <li class="active">Donation</li>
                         </ul>
                     </div>
                 </div>
@@ -52,17 +52,17 @@
     <section class="section section-lg bg-gray-1 bg-gray-1-decor">
         <div class="container">
             <div class="row row-50">
-                <div class="col-lg-6 pr-xl-5"><img src="{{asset('storage/images/ambulance.png')}}" alt="" width="518" height="430"/>
+                <div class="col-lg-6 pr-xl-5"><img src="{{asset('storage/images/donation.png')}}" alt="" width="518" height="430"/>
                 </div>
                 <div class="col-lg-6">
-                    <h3>Ambulance</h3>
+                    <h3>Donation</h3>
                     <div class="text-with-divider">
                         <div class="divider"></div>
                         <h4 class="text-opacity-70">We are committed to helping wounded kids find their place.</h4>
                     </div>
-                    <h2  style="color:green">Call : 01866751458 </h2>
-                    <h2 style="color:blue">Call : 01959813963</h2>
-                       <h2 style="color:red">Call : 01401518430</h2>
+                    <h3  style="color:green">Bkash : 01703227417 </h3>
+                    <h3 style="color:blue">DBBL Rocket : 01703227417</h3>
+                    <h3 style="color:red">Rupali Bank:3111010013448</h3>
                  </div>
             </div>
         </div>

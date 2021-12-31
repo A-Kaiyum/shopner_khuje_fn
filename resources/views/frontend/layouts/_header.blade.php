@@ -17,7 +17,7 @@
                         <div class="rd-navbar-brand"><a href="{{route('frontSide')}}"><img class="brand-logo-light"
                                                                                            src="{{asset('storage/images/logo-1.png')}}"
                                                                                            alt="" width="50" height="50"
-                                                                                           style="margin-left: 200px"/></a>
+                                                                                           style="margin-left: 100px"/></a>
                         </div>
                     </div>
                     <div class="rd-navbar-main-element">
@@ -64,10 +64,10 @@
                                 </li>
 
                             </ul>
-                            <a class="button button-primary button-sm" href="#">Donate</a>
+                            <a class="button button-primary button-sm" href="{{route('frontSide.donation')}}">Donate</a>
                         </div>
                     </div>
-                    <a class="button button-primary button-sm" href="#">Donate</a>
+                    <a class="button button-primary button-sm" href="{{route('frontSide.donation')}}">Donate</a>
                 </div>
             </div>
         </nav>

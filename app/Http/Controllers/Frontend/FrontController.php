@@ -133,6 +133,9 @@ public function home(){
     public function ambulance(){
         return view('frontend.pages.ambulance');
     }
+    public function donation(){
+        return view('frontend.pages.donation');
+    }
 
     public function sendForBlood(Request $request){
         $this->validate($request,[

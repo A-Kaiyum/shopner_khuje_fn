@@ -1,5 +1,5 @@
 @extends('backend.layouts.master')
-@section('title','contact')
+@section('title','Contact')
 @section('content')
 
     <div class="container-fluid">

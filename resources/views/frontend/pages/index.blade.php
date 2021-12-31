@@ -13,8 +13,8 @@
     <section class="section section-lg bg-gray-1">
         @include('frontend.layouts._latestCauses')
     </section>
-    <section class="parallax-container bg-gray-600" data-parallax-img="images/parallax-img-2.jpg">
+    <!-- <section class="parallax-container bg-gray-600" data-parallax-img="images/parallax-img-2.jpg">
         @include('frontend.layouts._subcribe')
-    </section>
+    </section> -->
 
 @endsection

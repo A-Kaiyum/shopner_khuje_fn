@@ -63,10 +63,6 @@
                             <label class="form-label rd-input-label" for="contact-name">Your Name</label>
                         </div>
                         <div class="form-wrap">
-                            <input class="form-input form-control-has-validation" id="contact-name" type="text" name="bloodgroup" data-constraints="@Required"><span class="form-validation"></span>
-                            <label class="form-label rd-input-label" for="contact-name">Blood Group</label>
-                        </div>
-                        <div class="form-wrap">
                             <input class="form-input form-control-has-validation" id="contact-email" type="email" name="email" data-constraints="@Email @Required"><span class="form-validation"></span>
                             <label class="form-label rd-input-label" for="contact-email">E-mail</label>
                         </div>

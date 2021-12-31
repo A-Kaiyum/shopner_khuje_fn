@@ -36,7 +36,7 @@
                     </div>
 
 
-                    <div class="pt-5">
+                    <!-- <div class="pt-5">
                         <h3 class="mb-5">6 Comments</h3>
                         <ul class="comment-list">
                             <li class="comment">
@@ -117,10 +117,10 @@
                                     <p><a href="#" class="reply rounded">Reply</a></p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> -->
                         <!-- END comment-list -->
 
-                        <div class="comment-form-wrap pt-5">
+                        <!-- <div class="comment-form-wrap pt-5">
                             <h3 class="mb-5">Leave a comment</h3>
                             <form action="#" class="p-5 bg-light">
                                 <div class="form-group">
@@ -146,7 +146,7 @@
 
                             </form>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 

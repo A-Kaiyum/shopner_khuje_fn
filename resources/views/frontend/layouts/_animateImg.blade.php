@@ -2,12 +2,12 @@
     <div class="row row-50 justify-content-lg-between align-items-lg-center">
         <div class="col-lg-6">
             <div class="box-img-animate">
-                <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;: 0, &quot;x&quot;: 140,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_4.jpg')}}" alt=""></div>
+                <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;: 0, &quot;x&quot;: 140,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_4.png')}}" alt=""></div>
                 <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;: 150, &quot;x&quot;: 0,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_3.jpg')}}" alt=""></div>
                 <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:70, &quot;x&quot;: -250,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_2.jpg')}}" alt=""></div>
                 <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:20, &quot;x&quot;: 20,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_1.jpg')}}" alt=""></div>
                 <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:60, &quot;x&quot;: 70,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_5.jpeg')}}" alt=""></div>
-                <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:0, &quot;x&quot;: 140,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_6.jpg')}}" alt=""></div>
+                <div class="box-img-animate-item" data-parallax-scroll="{&quot;y&quot;:0, &quot;x&quot;: 140,  &quot;smoothness&quot;: 50 }"><img src="{{asset('storage/images/animated_6.png')}}" alt=""></div>
             </div>
         </div>
         <div class="col-lg-6 col-xl-5">

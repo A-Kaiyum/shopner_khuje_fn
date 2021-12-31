@@ -14,6 +14,7 @@ Route::get('/contact','Frontend\FrontController@contact')->name('frontSide.conta
 Route::get('/police','Frontend\FrontController@police')->name('frontSide.police');
 Route::get('/doctor','Frontend\FrontController@doctor')->name('frontSide.doctor');
 Route::get('/ambulance','Frontend\FrontController@ambulance')->name('frontSide.ambulance');
+Route::get('/donation','Frontend\FrontController@donation')->name('frontSide.donation');
 Route::get('/bloodBank','Frontend\FrontController@bloodBank')->name('frontSide.bloodBank');
 Route::get('/findBlood','Frontend\FrontController@findBlood')->name('frontSide.findBlood');
 Route::get('/donateBlood','Frontend\FrontController@donateBlood')->name('frontSide.donateBlood');
