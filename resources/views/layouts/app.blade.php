@@ -18,6 +18,20 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(to right, rgba(58, 28, 113, 0.8),#d76d77,#ffaf7b)
+        }
+        .navbar{
+            background: linear-gradient(to left, rgba(199, 157, 157, 0.91),#d76d77,#ffaf7b)
+        }
+        .card-header{
+            background: linear-gradient(to bottom, #75525a 0%, #ff99cc 100%)
+        }
+        .card-body{
+            background: linear-gradient(to bottom, rgba(171, 168, 234, 0.83) 0%, rgba(180, 184, 211, 0.67) 100%)
+        }
+    </style>
 </head>
 <body>
     <div id="app">

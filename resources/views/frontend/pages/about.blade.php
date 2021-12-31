@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('title','About')
 @section('home_content')
-    <section class="parallax-container" data-parallax-img="{{asset('storage/images/about-banner.jpg')}}">
+    <section class="parallax-container" data-parallax-img="{{asset('storage/images/about_us.png')}}">
         <div class="parallax-content breadcrumbs-custom context-dark">
             <div class="container">
                 <div class="row justify-content-center">
