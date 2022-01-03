@@ -41,6 +41,10 @@ class UserController extends Controller
         Session::flash('success','User Created Successfully');
         return redirect()->back();
     }
+    public function show(User $user)
+    {
+        return view('backend.pages.showUser',compact('user'));
+    }
     public function edit(User $user){
         return view('backend.pages.editUser',compact('user'));
     }

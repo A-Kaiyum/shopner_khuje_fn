@@ -27,6 +27,14 @@
                         <td>{{$findDoner->phone}}</td>
                     </tr>
                     <tr>
+                        <th style="width:200px">Address</th>
+                        <td>{{$findDoner->address}}</td>
+                    </tr>
+                    <tr>
+                        <th style="width:200px">Last Donation</th>
+                        <td>{{$findDoner->last_donate}}</td>
+                    </tr>
+                    <tr>
                         <th style="width:200px">Blood Group</th>
                         <td>{{$findDoner->bloodgroup}}</td>
                     </tr>

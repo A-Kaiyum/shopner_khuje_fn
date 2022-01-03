@@ -71,6 +71,14 @@
                             <label class="form-label rd-input-label" for="contact-phone">Phone</label>
                         </div>
                         <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="contact-name" type="text" name="address" data-constraints="@Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-name">Your Address</label>
+                        </div>
+                        <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="contact-name" type="text" name="last_donate" data-constraints="@Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="contact-name">Your Last Donation Date</label>
+                        </div>
+                        <div class="form-wrap">
                             <input class="form-input form-control-has-validation" id="blood-group" type="text" name="bloodgroup" data-constraints="@Required"><span class="form-validation"></span>
                             <label class="form-label rd-input-label" for="contact-name">Your Blood Group</label>
                         </div>

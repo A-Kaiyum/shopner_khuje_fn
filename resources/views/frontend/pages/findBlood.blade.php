@@ -71,6 +71,10 @@
                             <label class="form-label rd-input-label" for="contact-phone">Phone</label>
                         </div>
                         <div class="form-wrap">
+                            <input class="form-input form-control-has-validation" id="address-name" type="text" name="address" data-constraints="@Required"><span class="form-validation"></span>
+                            <label class="form-label rd-input-label" for="address-name">Your Address</label>
+                        </div>
+                        <div class="form-wrap">
                             <input class="form-input form-control-has-validation" id="find-blood" type="text" name="bloodgroup" data-constraints="@Required"><span class="form-validation"></span>
                             <label class="form-label rd-input-label" for="find-blood">Blood Group</label>
                         </div>

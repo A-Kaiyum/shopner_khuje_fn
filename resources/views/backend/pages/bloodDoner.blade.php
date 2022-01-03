@@ -26,6 +26,8 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
+                    <th>Address</th>
+                    <th>Last Donation</th>
                     <th>Blood Group</th>
                     <th>Message</th>
                     <th style="width: 40px">Action</th>
@@ -41,6 +43,8 @@
                             <td>{{$findDoner->name}}</td>
                             <td>{{$findDoner->email}}</td>
                             <td>{{$findDoner->phone}}</td>
+                            <td>{{$findDoner->address}}</td>
+                            <td>{{$findDoner->last_donate}}</td>
                             <td>{{$findDoner->bloodgroup}}</td>
                             <td>{!! \Illuminate\Support\Str::limit($findDoner->message,20) !!}</td>
                             <td class="d-flex">
@@ -57,7 +61,7 @@
                     @endforeach
                 @else
                     <tr>
-                        <td colspan="6">
+                        <td colspan="12">
                             <h5 class="text-center">No findDoner Found</h5>
                         </td>
                     </tr>

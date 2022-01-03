@@ -21,6 +21,7 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
+                                <th>Address</th>
                                 <th>Blood Group</th>
                                 <th>Message</th>
                                 <th style="width: 40px">Action</th>
@@ -35,6 +36,7 @@
                                         <td>{{$sl}}</td>
                                         <td>{{$findBlood->name}}</td>
                                         <td>{{$findBlood->email}}</td>
+                                        <td>{{$findBlood->address}}</td>
                                         <td>{{$findBlood->phone}}</td>
                                         <td>{{$findBlood->bloodgroup}}</td>
                                         <td>{!! \Illuminate\Support\Str::limit($findBlood->message,20) !!}</td>

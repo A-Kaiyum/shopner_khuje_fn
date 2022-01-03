@@ -142,6 +142,7 @@ public function home(){
             'name'=>'required|string|max:255',
             'email'=>'required|email',
             'phone'=>'required|max:11',
+            'address'=>'required|string|max:255',
             'message'=>'required',
         ]);
 
@@ -159,6 +160,8 @@ public function home(){
             'name'=>'required|string|max:255',
             'email'=>'required|email',
             'phone'=>'required|max:11',
+            'address'=>'required|string|max:255',
+            'last_donate'=>'required|max:11',
             'message'=>'required',
         ]);
 

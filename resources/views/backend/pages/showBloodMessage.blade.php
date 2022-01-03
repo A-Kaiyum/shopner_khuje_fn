@@ -27,6 +27,10 @@
                         <td>{{$findBlood->phone}}</td>
                     </tr>
                     <tr>
+                        <th style="width:200px">Address</th>
+                        <td>{{$findBlood->address}}</td>
+                    </tr>
+                    <tr>
                         <th style="width:200px">Blood Group</th>
                         <td>{{$findBlood->bloodgroup}}</td>
                     </tr>

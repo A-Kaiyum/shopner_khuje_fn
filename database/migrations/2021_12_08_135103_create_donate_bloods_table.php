@@ -18,6 +18,8 @@ class CreateDonateBloodsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
+            $table->string('address');
+            $table->string('last_donate');
             $table->string('bloodgroup');
             $table->text('message');
             $table->timestamps();
